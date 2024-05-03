@@ -54,7 +54,7 @@ app.post('/createpost',async(req,res)=>{
         const profileUrl=uploadResponse.secure_url;
         const public_id=uploadResponse.public_id;
         console.log(profileUrl,"proUrl");
-        console.log(title,descript,tag);
+        console.log(title,descript,tag,public_id);
     const insertQuery = `INSERT INTO posts (title, descript, tag, img) VALUES (?, ?, ?, ?)`;
         const response = await db.run(insertQuery, title, descript, tag,profileUrl);
         res.json({"msg":"post inserted successfully"});
