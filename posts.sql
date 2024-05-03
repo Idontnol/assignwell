@@ -1,0 +1,8 @@
+-- create table posts(
+--     title TEXT,
+--     descript TEXT,
+--     tag CHAR(50),
+--     img TEXT
+-- );
+-- insert into posts(title, descript, tag,img) values('charna','mine all','babu','google.com');
+-- SELECT * FROM posts;
